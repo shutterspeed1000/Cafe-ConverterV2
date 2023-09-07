@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CaféTransmute</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!-- //Font Awesome -->
+    <script src="https://kit.fontawesome.com/1389be5dd3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Page Header and Logo -->
+    <div id="headerName" class="text-center pt-5 pb-5 container-fluid">
+        <div class="row">
+            <div id="headerTitle" class="col-">
+                <h1 class="display-1 "><strong>CaféTransmute</strong></h1>
+                <h4 id="subtitle" class="display-2 ">Europe</h4>
+                <i class="fa-solid fa-mug-hot fa-beat fa-xl" style="color: #503721;"></i>
+            </div>
+
+        </div>
+    </div>
+    <!-- City Search Input -->
+    <section id="cityForm" class="container pt-5 ps-2">
+        <div class="row">
+            <div class="col-12 text-center">
+                <label id="cityPrompt" for="city"> <strong>Discover, Sip, and Convert: Your Ultimate Coffee Adventure </strong> <br>Find Nearby Cafes, Order in Selected Language, and Convert The Price Into USD!</label>
+            </div>
+        </div>
+        <br>
+        <input type="search" id="city" name="city" size="20" placeholder="Search a city for coffee shops.">
+        <br>
+        <input type="button" id="citySubmit" value="Search">
+    </section>
+    <!-- Google Maps -->
+    <iframe id='map' class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded-5" width="600" height="400"></iframe>
+
+    <hr class="solid">
+
+    <!-- Translation Input and Return -->
+    <div id="translateBox" class="container">
+        <h2 class="ps-2 pt-3">Translate Your Order</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="input-group mb-3">
+                    <textarea type="text" class="text-break"  aria-label="Text input with dropdown button" id="englishInput" type="text" placeholder="Enter your desired order to be translated."></textarea>
+                    <button id="selectLang" class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Choose a language</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a id="fr" class="dropdown-item" >French</a></li>
+                        <li><a id="de" class="dropdown-item" >German</a></li>
+                        <li><a id="es" class="dropdown-item" >Spanish</a></li>
+                        <li><a id="it" class="dropdown-item" >Italian</a></li>
+                    </ul>
+                </div>
+            </div>
+
+           <div class="col-12">
+             <button id="translateButton">Translate</button>
+           </div> 
+            
+            <div class="col-12 col-sm-6">
+                <textarea id="translateOutput" type="text" aria-label="Text output into desired language"></textarea>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+
+    <hr class="solid">
+    <!-- Currency Conversion -->
+    <div id="currencyConverter" class="container">
+        <h2 class="col-12 ps-2">Currency Converter</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 ">
+                    <input id="eur" type="text" placeholder="€">
+                </div>
+                
+                <div class="col-12">
+                    <button id="currencyCon">Convert to USD</button>
+                </div>
+                
+                <div class="col-12 col-sm-6">    
+                    <input id="usd" type="text" placeholder="$">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        Coding Super Friends 2023
+    </footer>
+   
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- JQuery  -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

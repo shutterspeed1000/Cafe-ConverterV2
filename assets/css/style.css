@@ -1,0 +1,232 @@
+body {
+    background-color: #f6f0dd;
+}
+
+#map {
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+} 
+
+#headerName {
+    background-color: #EBDEB5;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #5a4311da, 0 0 60px #e6bc0050, 0 0 70px #e6cf0062, 0 0 70px brown, 0 0 80px #e6a9000a;
+}
+
+#subtitle {
+    font-size: 30px;
+    margin-left: 200px;
+    color: darkred;
+}
+
+#citySubmit  {
+    margin-top: 10px;
+    background-color: #34517b;
+    color: white;
+    border-radius: 15%;
+    width: 100px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#cityPrompt {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #443006da, 0 0 60px #a8995650, 0 0 70px #524a04a6, 0 0 70px brown, 0 0 80px #e6a9000a;
+}
+
+#cityForm #city {
+    width: 250px;
+    border: 3px solid black;    
+}
+
+#englishInput {
+    margin-right: 5px;
+    border-width: 3px;
+    border-color: black;
+    box-shadow: 2px 2px;  
+}
+
+#translateOutput {
+    height: 250px;
+    border-width: 3px;
+    border-color: black;
+    box-shadow: 2px 2px; 
+}
+
+#translateButton {
+    background-color: #34517b;
+    color:white;
+    width: 150px;
+    height: 50px;
+    border-radius: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+}
+
+#translateBox h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+#currencyCon {
+    background-color: #34517b;
+    color: white;
+    width: 150px;
+    height: 60px;
+    border-radius: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#currencyConverter h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    font-size: 40px;
+}
+
+#usd {
+    border-width: 3px;
+    padding: 3px;
+    margin-top: 11px;
+}
+
+#eur {
+    border-width: 3px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+hr.solid {
+    border-top: 5px solid #817145;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* //Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(65, 55, 4);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(90, 70, 6);
+    border-radius: 10px;
+  }
+
+/* Media Query  */
+
+/* //Extra Small devices 375px  */
+@media (min-width:375px){
+    #englishInput {
+        height: 150px;
+        width: 175px;
+        margin-left: 1px;
+    }
+    
+    #translateOutput {
+        height: 150px;
+        width: 175px;
+    }
+}
+
+/* 431px */
+@media (min-width: 431px) {
+    #englishInput {
+        height: 120px;
+        width: 220px;
+    }
+    
+    #translateOutput {
+        height: 120px;
+        width: 220px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    #englishInput {
+        height: 120px;
+        width: 220px;
+    }
+    
+    #translateOutput {
+        height: 120px;
+        width: 220px;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #englishInput {
+        height:250px;
+        width: 300px;
+        margin-right: 5px;
+    }
+
+    #translateOutput {
+        height: 250px;
+        width: 300px;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #englishInput {
+        height:300px;
+        width: 400px;
+    }
+
+    #translateOutput {
+        height: 300px;
+        width: 400px;
+    }
+ }
+
+ @keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* apply the animation to the subtitle */
+#subtitle {
+    animation: fade-in 5s ease-in-out;
+}
+
+#headerTitle {
+    animation: fade-in 2s ease-in-out;
+}
